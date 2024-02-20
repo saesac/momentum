@@ -1,8 +1,24 @@
 body {
+    width: 100vw;
     height: 100vh;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+
 .hidden {
     display: none;
+}
+
+#clock {
+    font-size: 10vh;
+    text-align: center;
+}
+
+#bgimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
