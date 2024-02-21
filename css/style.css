@@ -1,5 +1,9 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 @import "reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+html {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
 
 body {
     width: 100vw;
@@ -19,6 +23,7 @@ input {
     text-align: center;
     margin-bottom: 1vh;
     padding: 1vw 1vh;
+    
 }
 
 input::placeholder {
@@ -41,28 +46,34 @@ button {
 }
 
 #clock {
-    /* background-color: rgba(255,255,192,0.1);
-    border-radius: 30px;
-    backdrop-filter: blur(10px);
-    box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.1); */
-
     color: #ffffff;
     font-size: 10vh;
-    font-weight: 900;
+    font-weight: 400;
 
     width: min-content;
-    margin: 5vh auto;
-    padding: 2vw 2vh;
+    margin: 4vh 0 3vh 2vw;
+}
+
+#quotes {
+    color: #ffffff;
+    width: max-content;
+    margin: 0;
+    padding: 0 3vw;
 }
 
 #quote {
-    background-color: #ffffff;
-    border-radius: 35px;
+    font-size: 3vh;
+    font-weight: 300;
+    width: 90vw;
+    padding: 0 2vw;
+    word-break:break-all;
+}
+
+#author {
+    color: rgba(255,255,255,0.5);
     font-size: 2.5vh;
     font-weight: 100;
-    text-align: center;
-    margin: auto 5vw;
-    padding: 5vw 5vh;
+    margin: 0 0 1.5vh 2vw;
 }
 
 #bgimg {
