@@ -44,7 +44,22 @@ const quotes = [
 
 const quote = document.querySelector("#quote")
 const author = document.querySelector("#author")
+const quoteCheck = document.querySelector("#quoteCheck")
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]
 
 quote.innerText = todaysQuote.quote
+quoteCheck.innerText = todaysQuote.quote
 author.innerText = `- ${todaysQuote.author}`
+
+function changeQuote() { 
+    if (quote.clientWidth < quoteCheck.clientWidth) {
+        quote.classList.remove("hidden")
+        quoteCheck.className = "hidden"
+    }
+    else if (quote.clientWidth > quoteCheck.clientWidth) {
+        quoteCheck.classList.remove("hidden")
+        quote.className = "hidden"
+    }
+}
+changeQuote()
+window.onresize = changeQuote
